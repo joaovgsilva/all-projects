@@ -1,7 +1,5 @@
 const localStorageKey = 'to-do-list-gn'
 
-let btnAdd = document.getElementById('btn-new-task');
-
 function validateIfExistNewTask(){
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
     let inputValue  = document.getElementById('input-new-task').value
@@ -54,4 +52,3 @@ function removeItem(data){
 }
 
 showValues()
-
